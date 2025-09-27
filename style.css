@@ -1,0 +1,251 @@
+/*Body styling for all pages */
+body
+{
+    background-color: rgb(123, 97, 62);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width: 1024px)
+{
+    header
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/*Header styling for all home pages */
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(47, 54, 60);
+    position: sticky;
+}
+
+.Company-Logo img
+{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+nav
+{
+    display: flex;
+    gap: 12px;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav a:hover
+{
+    color: blue;
+}
+
+/*Home page styling */
+.Home-Page h1
+{
+    color: black;
+    text-align: center;
+    margin: 50px;
+}
+
+.Home-Content
+{
+    max-width: 1300px;
+    margin: auto;
+}
+
+.Intro-Message
+{
+    background-color: rgb(47, 54, 60);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0cm;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Intro-Message p
+{
+    text-align: center;
+    text-size-adjust: 16px;
+    color: aliceblue;
+}
+
+.FlexOverview
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.Logo
+{
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Logo img
+{
+    height: 260px;
+    width: 260px;
+}
+
+.Sulfate-image
+{
+    flex: 2;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Sulfate-image img
+{
+    height: 260px;
+    width: 260px;
+}
+
+.Overview
+{
+    background-color: rgb(47, 54, 60);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0cm;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*About page styling*/
+
+.About-page h1
+{
+    align-items: center;
+}
+.Employee-Table table
+{
+    max-width: 70%;
+}
+
+.Employee-Table tr,td
+{
+    border: 7px solid #090000 ;
+}
+
+.Our-Company
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.About1
+{
+    flex: 1;
+    max-width: 300px;
+    background-color: rgb(47, 54, 60);
+     padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0cm;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.About2
+{
+    flex: 2;
+    max-width: 300px;
+    background-color: rgb(47, 54, 60);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0cm;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.About3
+{
+    flex: 3;
+    max-width: 300px;
+    background-color: rgb(47, 54, 60);
+     padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0cm;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Contact page styling*/
+.Contact-Info
+{
+    background-color: rgb(47, 54, 60);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0cm;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+/*Products page styling*/
+
+/*Issues page styling*/
+.login-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-form label {
+  font-weight: bold;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.login-form input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.login-form button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
