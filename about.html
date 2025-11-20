@@ -83,6 +83,104 @@
                 </div>
             </div>
         </div>
+
+       <!--Equiry form -->
+        <div class = "Form-container">
+            <p class = "Form-discription">Interested</p>
+
+            <div class="Success-message" id="SuccessMessage">
+                Thank you for your enquiry. We have received your message and will contact you soon
+            </div>
+
+            <form id ="enquiryForm" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="FirstName" class="Required">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+                        <div class="error-message" id="firstNameError">Please put in your name</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="LastName" class="Required">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+                        <div class="error-message" id="lastNameError">Please put in your last name</div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email" class="Required">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email Address">
+                        <div class="error-message" id="emailError">Please enter a valid email address</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        <div class="error-message" id="phoneError">Please put in a valid phone number</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company" placeholder="Enter your company name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productType" class="Required">Product type</label>
+                        <select id="productType" name="productType">
+                            <option value>Select a product</option>
+                            <option value>Deep Conditioner</option>
+                            <option value>Shampoo</option>
+                            <option value>Hair Mask</option>
+                            <option value>Leave-in Conditioner</option>
+                        </select>
+                        <div class="error-message" id="productTypeError">Please select a product type</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Products Wanted</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="product1" name="products" value="deep-conditioner">
+                                <label for="product1">Deep Conditioner</label>
+                            </div>
+
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="product2" name="products" value="shampoo">
+                                <label for="product2">Shampoo</label>
+                            </div>
+
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="product3" name="products" value="hair-mask">
+                                <label for="product3">Hair mask</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget" class="Required">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value>Select the budget range</option>
+                            <option value>Under R5000</option>
+                            <option value>R5000-R10000</option>
+                            <option value>R10000-R20000</option>
+                            <option value>Over R20000</option>
+                        </select>
+                        <div class="error-message" id="budgetError">Please select a Budget range</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Product details</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Please describe how you want to use our products for business">
+                        <div class="error-message" id="phoneError">Please input product details</div>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="submitBtn">Submit Enquiry</button>
+                </div>
+            </form>
+
+        </div>
+
     </main>
 </body>
 </html>

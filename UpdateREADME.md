@@ -1,0 +1,3 @@
+-Included the query in the project
+-Updated the query in the futureplans
+-
